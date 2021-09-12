@@ -1,30 +1,20 @@
-from youtubesearchpython import VideosSearch
-import pafy
+from pyrogram import Client
+from pytgcalls import GroupCallFactory as gcf
+import config
+# Plugins
+vsb = dict(root="VideoxD/Handlers")
 
-#Pafy
+# Pyro Client
+app = Client(config.STRING_SESSION, api_id = config.API_ID, api_hash = config.API_HASH, plugins= vsb)
+bot = Client("bot", api_id = config.API_ID, api_hash = config.API_HASH, bot_token = config.BOT_TOKEN, plugins= vsb)
 
-def url_stream(url: str):
-    video = pafy.new(url)
-    videos = video.getbest().url
-    return videos
-# Youtube
 
-def youtube(query: str):
-    search = VideosSearch(query, limit = 1).result()
-    thumb = search["result"][0]["thumbnails"][0]["url"].split("?")[0]
-    link = search["result"][0]["link"]
-    title = search["result"][0]["title"]
-    video = url_stream(link)
-    return thumb, video, title
-#User Input
+# pytgcalls
 
-async def user_input(input):
-    """ retrieve user input """
-    if ' ' in input or '\n' in input:
-       return str(input.split(maxsplit=1)[1].strip())
-    return ''
+Calls = gcf(app).get_group_call()
 
-# Help
+
+# Help Text
 
 HELP = """** Here is a list of commands for Video Streaming Bot**
 /vplay - To Stream a Video in Group ( Youtube Search, Youtube Link)
@@ -35,3 +25,5 @@ HELP = """** Here is a list of commands for Video Streaming Bot**
 /repo - To Get The Repo
 /help , /start - To Get Welcome Menu and Commands (works in private)
 /alive - To Check If The Bot Is Alive"""
+
+
