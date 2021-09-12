@@ -110,10 +110,7 @@ async def media_ended(_, __):
         process = await bot.send_message(chat_id, "Processing!")
         stuff = await que.get()
     try:
-        YouTube = await loop.run_in_executor(None, youtube, stuff)
-        video = YouTube[1]
-        thumb = YouTube[0]
-        title = YouTube[2]
+        thumb, video, title = await loop.run_in_executor(None, youtube_stream, stuff)
         await process.delete()
         await Calls.start_video(video, repeat=False)
         global number
