@@ -29,6 +29,12 @@ async def start(client, message):
                         text="Commands", callback_data="commands"
                     )
                 ],
+                [
+                    InlineKeyboardButton(
+                        text="Demo",
+                        url="https://t.me/VideoStreamingxD?voicechat",
+                    )
+                ],
             ]
         ),
     )

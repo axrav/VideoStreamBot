@@ -52,7 +52,9 @@ async def admin_check(client, message):
 # Video_Stream
 async def video_stream(chat_id: int, query, client, message):
     process = await message.reply("Processing!")
-    thumb, video, title = await loop.run_in_executor(None, youtube_stream, query)
+    thumb, video, title = await loop.run_in_executor(
+        None, youtube_stream, query
+    )
     await process.edit("Starting Streaming!")
     await process.delete()
     await Calls.join(chat_id)

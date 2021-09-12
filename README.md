@@ -75,8 +75,8 @@ vegeta@arch $ python3 -m VideoxD
 - No support Group/Channel for now.
     
 ### Contact
-    
-<p><a href="https://t.me/VegetaxD"><img src="https://img.shields.io/badge/Contact%20On%20Telegram-blueviolet?style=for-the-badge&logo=telegram" width="200""/></a></p> 
+<p><a href="https://t.me/VegetaxD"><img src="https://img.shields.io/badge/Contact%20Me-blueviolet?style=for-the-badge&logo=telegram" width="80""/></a>
+<a href="https://t.me/VideoStreamingxD"><img src="https://img.shields.io/badge/Telegram%20Channel-blueviolet?style=for-the-badge&logo=telegram" width="113""/></a></p> 
 
 ## Credits
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
