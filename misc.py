@@ -27,7 +27,7 @@ async def user_input(input):
 # Help
 
 HELP = """** Here is a list of commands for Video Streaming Bot**
-/vplay - To Stream a Video in Group
+/vplay - To Stream a Video in Group ( Youtube Search, Youtube Link)
 /vstop - To Stop a Video Stream
 /vpause - To Pause a Video Stream
 /vresume - To Resume Video Stream
