@@ -52,7 +52,7 @@ vegeta@arch $ python3 -m VideoxD
  
 ### Commands
 ```
-/vplay - To Stream a Video in Group
+/vplay - To Stream a Video in Group ( Youtube Search/ Youtube Link )
 
 /vstop - To Stop a Video Stream
 
