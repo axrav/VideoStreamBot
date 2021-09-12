@@ -1,0 +1,7 @@
+pytgcalls==3.0.0.dev19
+python-dotenv
+youtube-search-python
+tgcrypto
+git+https://github.com/pyrogram/pyrogram@master
+youtube-dl
+pafy
