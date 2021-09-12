@@ -24,7 +24,7 @@
         "description": "A Group Chat Id To Stream Videos",
         "required": true
       }
-    }
+    },
     "buildpacks": [
       {
         "url": "heroku/python"
