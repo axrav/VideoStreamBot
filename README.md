@@ -33,7 +33,7 @@
 <p><a href="https://replit.com/@AaravxD/VsBSession#main.py"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p> 
  
 
-## Deploy Locally or Server
+## Deploy Locally or Server ( NO SUPPORT FOR WINDOWS, Dont ask me if you use Windows )
 ``` 
 vegeta@arch $ git clone https://github.com/VegetaxD/VideoStreamBot
 vegeta@arch $ cd VideoStreamBot
