@@ -46,7 +46,7 @@ vegeta@arch $ python3 -m VideoxD
 ## Config Vars
 1. `API_ID` : Assistant Account Telegram API_ID, get it from my.telegram.org
 2. `API_HASH` : Assistant Account Telegram API_HASH, get it from my.telegram.org
-3. `BOT_TOKEN` : Your Telegram Bot Token, get it from @Botfather
+3. `BOT_TOKEN` : Your Telegram Bot Token, get it from @Botfather (Make sure Inline is turned On)
 4. `SESSION_STRING` : Pyrogram Session String of Assistant Account.
 5. `VIDEO_CHAT_ID` : Chat ID where you want bot to stream. (Single Chat Only)
  
