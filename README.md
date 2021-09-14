@@ -54,6 +54,8 @@ vegeta@arch $ python3 -m VideoxD
 ```
 /vplay - To Stream a Video in Group ( Youtube Search/ Youtube Link )
 
+/vtelegram - To Stream a Video from Telegram
+
 /vstop - To Stop a Video Stream
 
 /vpause - To Pause a Video Stream
@@ -80,7 +82,7 @@ vegeta@arch $ python3 -m VideoxD
 
 ## Credits
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [PyTgCalls](https://github.com/MarshalX/tgcalls)
+- [MarshalX/TgCalls](https://github.com/MarshalX/tgcalls)
     
 ## License
     

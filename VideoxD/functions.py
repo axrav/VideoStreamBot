@@ -1,9 +1,8 @@
 import asyncio
 
 import pafy
-from youtubesearchpython import VideosSearch
-
 from misc import Calls, bot
+from youtubesearchpython import VideosSearch
 
 loop = asyncio.get_event_loop()
 
@@ -52,9 +51,12 @@ async def admin_check(client, message):
 # Video_Stream
 async def video_stream(chat_id: int, query, client, message):
     process = await message.reply("Processing!")
-    thumb, video, title = await loop.run_in_executor(
-        None, youtube_stream, query
-    )
+    if "DOWNLOADS" in query:
+        thumb, video, title = "img.jpg", query, "Telegram Video"
+    else:
+        thumb, video, title = await loop.run_in_executor(
+            None, youtube_stream, query
+        )
     await process.edit("Starting Streaming!")
     await process.delete()
     await Calls.join(chat_id)
