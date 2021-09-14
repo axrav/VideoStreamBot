@@ -74,10 +74,10 @@ vegeta@arch $ python3 -m VideoxD
 ## Note
 - This is a Dev branch, So you might experience bugs!
 - I will try to update it regularly!
-- No support Group/Channel for now.
+- You can tell bugs and suggest new updates! 
     
 ### Contact
-<p><a href="https://t.me/VegetaxD"><img src="https://img.shields.io/badge/Contact%20Me-blueviolet?style=for-the-badge&logo=telegram" width="80""/></a>
+<p><a href="https://t.me/VideoStreamSupport"><img src="https://img.shields.io/badge/Support%20Chat-blueviolet?style=for-the-badge&logo=telegram" width="80""/></a>
 <a href="https://t.me/VideoStreamingxD"><img src="https://img.shields.io/badge/Telegram%20Channel-blueviolet?style=for-the-badge&logo=telegram" width="113""/></a></p> 
 
 ## Credits
