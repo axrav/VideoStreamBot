@@ -77,8 +77,8 @@ vegeta@arch $ python3 -m VideoxD
 - You can tell bugs and suggest new updates! 
     
 ### Contact
-<p><a href="https://t.me/VideoStreamSupport"><img src="https://img.shields.io/badge/Support%20Chat-blueviolet?style=for-the-badge&logo=telegram" width="80""/></a>
-<a href="https://t.me/VideoStreamingxD"><img src="https://img.shields.io/badge/Telegram%20Channel-blueviolet?style=for-the-badge&logo=telegram" width="113""/></a></p> 
+<p><a href="https://t.me/VideoStreamSupport"><img src="https://img.shields.io/badge/Support%20Chat-blueviolet?style=for-the-badge&logo=telegram" width="120""/></a>
+<a href="https://t.me/VideoStreamingxD"><img src="https://img.shields.io/badge/Telegram%20Channel-blueviolet?style=for-the-badge&logo=telegram" width="120""/></a></p> 
 
 ## Credits
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
