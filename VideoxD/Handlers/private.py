@@ -34,7 +34,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton(
                         text="Support Chat/Demo",
-                        url="https://t.me/VideoStreamingxD?voicechat",
+                        url="https://t.me/VideoStreamSupport",
                     )
                 ]
             ]
