@@ -11,8 +11,10 @@ async def startxd(client, message):
     return await message.reply("Yes I am Alive!,Who Cares About Someone Else!")
 
 
-@bot.on_message(filters.command(["start", "help"]) & filters.private)
+@bot.on_message(filters.command(["start", "help"]))
 async def start(client, message):
+    if message.chat.type == "supergroup":
+        return await message.reply("DM me to Know about my commands!")
     sender_mention = message.from_user.mention
     return await message.reply(
         f"Hi! {sender_mention}, This is a video streaming bot. Here is a link to my source code!",
@@ -31,14 +33,27 @@ async def start(client, message):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="Demo",
+                        text="Support Chat/Demo",
                         url="https://t.me/VideoStreamingxD?voicechat",
                     )
-                ],
+                ]
             ]
-        ),
+        )
     )
 
+@bot.on_message(filters.command("repo") ) 
+async def repo(client, message):
+    return await message.reply("Here is the Repository!", reply_markup = InlineKeyboardMarkup(
+        [
+            [
+            InlineKeyboardButton(
+                    text = "Repository",
+                    url = "https://github.com/VegetaxD/VideoStreamBot"
+                )                
+            ]
+        ]
+                )
+                        )
 
 @bot.on_callback_query(filters.regex("commands"))
 async def command_(_, cb):

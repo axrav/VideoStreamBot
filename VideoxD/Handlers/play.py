@@ -61,7 +61,7 @@ async def stop(client, message):
     admins = await admin_check(client, message)
     if message.from_user.id not in admins:
         return await message.reply(
-            "You Dont Have Sufficient Permissions!, Make Sure You Have Manage Video Chats"
+            "You Dont Have Sufficient Permissions!,(Manage Video Chats)"
         )
     await Calls.stop()
     number = 0
@@ -78,11 +78,11 @@ async def skip(client, message):
     admins = await admin_check(client, message)
     if message.from_user.id not in admins:
         return await message.reply(
-            "You Dont Have Sufficient Permissions!, Make Sure You Have Manage Video Chats"
+            "You Dont Have Sufficient Permissions!,(Manage Video Chats)"
         )
     if que.empty():
         await message.reply(
-            "No More Videos In Queue!\n\nLeaving Video Chat! xD"
+            "No More Videos In Queue!\nLeaving Video Chat!"
         )
         return await Calls.stop()
     else:
@@ -99,7 +99,7 @@ async def skip(client, message):
 async def media_ended(_, __):
     if que.empty():
         await bot.send_message(
-            chat_id, "No More Videos In Queue!\n\nLeaving Video Chat! xD"
+            chat_id, "No More Videos In Queue!\n\nLeaving Video Chat!"
         )
         return await Calls.stop()
     else:
@@ -117,11 +117,10 @@ async def media_ended(_, __):
         await Calls.start_video(video, repeat=False)
         global number
         number -= 1
-        ctitle = (await bot.get_chat(chat_id)).title
         return await bot.send_photo(
             chat_id,
             photo=thumb,
-            caption=f"Started Streaming!\n\n**Video🎥** : **__{title}__**\n**Chat : {ctitle}**",
+            caption=f"Started Streaming!\n\n**Video🎥** : **__{title}__**"
         )
     except Exception as e:
         return await bot.send_message(chat_id, e)
