@@ -17,7 +17,7 @@ async def start(client, message):
         return await message.reply("DM me to Know about my commands!")
     sender_mention = message.from_user.mention
     return await message.reply(
-        f"Hi! {sender_mention}, This is a video streaming bot. Here is a link to my source code!",
+        f"Hi! {sender_mention}, This is a Video Streaming Bot. Here is the link to my source code!",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
