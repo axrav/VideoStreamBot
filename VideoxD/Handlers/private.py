@@ -8,7 +8,9 @@ from .. import HELP, bot
 
 @bot.on_message(filters.command("alive"))
 async def startxd(client, message):
-    return await message.reply("Yes I am Alive!,Who Cares About Someone Else!")
+    return await message.reply(
+        "Yes I am Alive!,Who Cares About Someone Else!"
+    )
 
 
 @bot.on_message(filters.command(["start", "help"]))
@@ -36,24 +38,28 @@ async def start(client, message):
                         text="Support Chat/Demo",
                         url="https://t.me/VideoStreamSupport",
                     )
-                ]
+                ],
             ]
-        )
+        ),
     )
 
-@bot.on_message(filters.command("repo") ) 
+
+@bot.on_message(filters.command("repo"))
 async def repo(client, message):
-    return await message.reply("Here is the Repository!", reply_markup = InlineKeyboardMarkup(
-        [
+    return await message.reply(
+        "Here is the Repository!",
+        reply_markup=InlineKeyboardMarkup(
             [
-            InlineKeyboardButton(
-                    text = "Repository",
-                    url = "https://github.com/VegetaxD/VideoStreamBot"
-                )                
+                [
+                    InlineKeyboardButton(
+                        text="Repository",
+                        url="https://github.com/VegetaxD/VideoStreamBot",
+                    )
+                ]
             ]
-        ]
-                )
-                        )
+        ),
+    )
+
 
 @bot.on_callback_query(filters.regex("commands"))
 async def command_(_, cb):

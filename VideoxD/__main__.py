@@ -1,7 +1,8 @@
 import asyncio
 
-from misc import Calls, app, bot
 from pyrogram import idle
+
+from misc import Calls, app, bot
 
 
 async def init():

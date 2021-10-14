@@ -3,7 +3,8 @@ import asyncio
 from pyrogram import filters
 
 from .. import Calls, bot, chat_id
-from ..functions import admin_check, user_input, video_stream, youtube_stream
+from ..functions import (admin_check, cicon, user_input, video_stream,
+                         youtube_stream)
 
 que = asyncio.Queue()
 number = 0
@@ -81,9 +82,7 @@ async def skip(client, message):
             "You Dont Have Sufficient Permissions!,(Manage Video Chats)"
         )
     if que.empty():
-        await message.reply(
-            "No More Videos In Queue!\nLeaving Video Chat!"
-        )
+        await message.reply("No More Videos In Queue!\nLeaving Video Chat!")
         return await Calls.stop()
     else:
         stuff = await que.get()
@@ -107,7 +106,14 @@ async def media_ended(_, __):
         stuff = await que.get()
     try:
         if "DOWNLOADS" in stuff:
-            thumb, video, title = "./img.jpg", stuff, "Telegram Audio"
+            video, title = stuff, "Telegram Video"
+            if cicon:
+                try:
+                    thumb = cicon
+                except:
+                    thumb = "./img.jpg"
+            else:
+                thumb = "./img.jpg"
             await Calls.start_video(video, repeat=False)
         else:
             thumb, video, title = await loop.run_in_executor(
@@ -120,7 +126,7 @@ async def media_ended(_, __):
         return await bot.send_photo(
             chat_id,
             photo=thumb,
-            caption=f"Started Streaming!\n\n**Video🎥** : **__{title}__**"
+            caption=f"Started Streaming!\n\n**Video🎥** : **__{title}__**",
         )
     except Exception as e:
         return await bot.send_message(chat_id, e)

@@ -1,8 +1,10 @@
 import asyncio
 
 import pafy
-from misc import Calls, bot
 from youtubesearchpython import VideosSearch
+
+from config import CUSTOM_ICON as cicon
+from misc import Calls, bot
 
 loop = asyncio.get_event_loop()
 
@@ -52,7 +54,14 @@ async def admin_check(client, message):
 async def video_stream(chat_id: int, query, client, message):
     process = await message.reply("Processing!")
     if "DOWNLOADS" in query:
-        thumb, video, title = "img.jpg", query, "Telegram Video"
+        video, title = query, "Telegram Video"
+        if cicon:
+            try:
+                thumb = cicon
+            except:
+                thumb = "img.jpg"
+        else:
+            thumb = "img.jpg"
     else:
         thumb, video, title = await loop.run_in_executor(
             None, youtube_stream, query
