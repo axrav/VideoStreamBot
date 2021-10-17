@@ -10,5 +10,5 @@ async def update(client, message):
         return await message.reply("You Dont Have Sufficient Permissions!(Manage Video Chats)")
     else:
         return await message.reply("Updated and Restarted!")
-        os.system(f"git pull;kill -9 {os.getpid()} && python3 -m VideoxD")
+        os.system(f"cd ../../ && git pull && kill -9 {os.getpid()} && python3 -m VideoxD")
 
