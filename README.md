@@ -23,7 +23,7 @@
 ## Deployment Methods and Sessions.
 
 ### Railway 
-<p><a href="https://railway.app/new/template?template=https://github.com/VegetaxD/VideoStreamBot&envs=API_ID,API_HASH,STRING_SESSION,BOT_TOKEN,VIDEO_CHAT_ID"><img src="https://img.shields.io/badge/Deploy%20To%20Railway-blueviolet?style=for-the-badge&logo=railway" width="200""/></a></p>
+<p><a href="https://railway.app/new/template?template=https://github.com/VegetaxD/VideoStreamBot&envs=API_ID,API_HASH,STRING_SESSION,BOT_TOKEN,VIDEO_CHAT_ID,CUSTOM_ICON"><img src="https://img.shields.io/badge/Deploy%20To%20Railway-blueviolet?style=for-the-badge&logo=railway" width="200""/></a></p>
 
 ### Heroku 
 <p><a href="https://heroku.com/deploy?template=https://github.com/VegetaxD/VideoStreamBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
