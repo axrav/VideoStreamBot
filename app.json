@@ -23,7 +23,7 @@
       "VIDEO_CHAT_ID": {
         "description": "A Group Chat Id To Stream Videos",
         "required": true
-      }
+      },
       "CUSTOM_ICON": {
         "description": "A custom icon to be displayed rather than the default"
         "required": false
