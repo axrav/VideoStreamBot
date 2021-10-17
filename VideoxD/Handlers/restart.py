@@ -9,6 +9,6 @@ async def restart(client, message):
     if message.from_user.id not in admins:
         return await message.reply("You Dont Have Sufficient Permissions!(Manage Video Chats)")
     else:
-        return await message.reply("Bot Restarted!")
+        await message.reply("Bot Restarted!")
         os.system(f"kill -9 {os.getpid()} && python3 -m VideoxD")
 
