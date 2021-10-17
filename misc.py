@@ -39,3 +39,4 @@ HELP = """** Here is a list of commands for Video Streaming Bot**
 /repo - To Get The Repo
 /help , /start - To Get Welcome Menu and Commands (works in private)
 /alive - To Check If The Bot Is Alive"""
+  Made By  -   @Srikanth_36
