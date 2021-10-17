@@ -2,7 +2,7 @@
     "name": "Video Streaming Bot",
     "description": "Telegram bot for streaming video in groups",
     "keywords": ["telegram", "python", "video", "bot"],
-    "repository": "https://github.com/Vegetaxd/VideoStreamBot",
+    "repository": "https://github.com/Srikanthraj36/VideoStreamBot",
     "env": {
       "STRING_SESSION": {
         "description": "A Pyrogram session string.Generate it using replit",
