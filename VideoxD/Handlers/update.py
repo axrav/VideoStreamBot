@@ -8,7 +8,6 @@ async def update(client, message):
     admins = await admin_check(client, message)
     if message.from_user.id not in admins:
         return await message.reply("You Dont Have Sufficient Permissions!(Manage Video Chats)")
-    else:
-        await message.reply("Updated and Restarted!")
-        os.system(f"cd ../../ && git pull && kill -9 {os.getpid()} && python3 -m VideoxD")
+    await message.reply("Updated and Restarted!")
+    os.system(f"cd ../../ && git pull && kill -9 {os.getpid()} && python3 -m VideoxD")
 
