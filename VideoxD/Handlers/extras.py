@@ -8,7 +8,7 @@ from ..functions import admin_check
 async def pause(client, message):
     if not Calls.is_running:
         return await message.reply(
-            "There is Nothing Streaming, What Shall be Paused?"
+            "There is Nothing Streaming, What Shall be Paused ⏸ ?"
         )
     admins = await admin_check(client, message)
     if message.from_user.id not in admins:
