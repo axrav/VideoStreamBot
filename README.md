@@ -76,9 +76,6 @@ vegeta@arch $ python3 -m VideoxD
 - I will try to update it regularly!
 - You can tell bugs and suggest new updates! 
     
-### Contact
-<a href="https://t.me/VideoStreamingxD"><img src="https://img.shields.io/badge/Telegram%20Channel-blueviolet?style=for-the-badge&logo=telegram" width="120""/></a></p> 
-
 ## Credits
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
 - [MarshalX/TgCalls](https://github.com/MarshalX/tgcalls)
